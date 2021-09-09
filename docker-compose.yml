@@ -3,8 +3,6 @@ services:
     localstack:
         image: localstack/localstack
         container_name: localstack
-        environment: 
-            - SERVICES=s3,rds
         ports:
             - 4566:4566
         volumes:
